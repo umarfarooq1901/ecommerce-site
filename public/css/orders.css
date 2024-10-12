@@ -1,0 +1,186 @@
+.container {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(156, 152, 152, 0.205);
+  color: #333;
+  width: 70%;
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .message {
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    font-size: larger;
+  }
+
+  .order-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin-bottom: 20px;
+
+    .order-header {
+      padding: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background-color: antiquewhite;
+      border-radius: 10px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      > .order-details {
+        flex: 1;
+        padding: 20px;
+        background-color: #ccc;
+        border-radius: 10px;
+        > h2 {
+          margin-top: 0;
+          margin-bottom: 20px;
+          color: rgb(221, 58, 91);
+        }
+        > p {
+          margin: 0;
+          margin-bottom: 5px;
+        }
+      }
+      > .address-details {
+        flex: 1;
+        padding: 20px;
+        background-color: #ccc;
+        border-radius: 10px;
+        > h2 {
+          margin-top: 0;
+          margin-bottom: 20px;
+          color: rgb(221, 58, 91);
+        }
+        > p {
+          margin: 0;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .product-details {
+      background-color: antiquewhite;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+
+      > h2 {
+        color: rgb(231, 66, 99);
+      }
+
+      .product-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+
+        > .card {
+          width: 600px;
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          margin-bottom: 10px;
+          > p {
+            margin-bottom: 10px;
+            line-height: 25px;
+          }
+          > img {
+            width: 200px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .track-order {
+      background-color: antiquewhite;
+      height: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      > h2 {
+        color: rgb(204, 66, 94);
+        text-align: center;
+      }
+
+      > .tracking {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #e6dada;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+  }
+
+  .btn-small {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .btn-verify {
+    background-color: green;
+    &:hover {
+      background-color: rgb(5, 82, 5);
+    }
+  }
+
+  .btn-cancel {
+    background-color: rgb(163, 20, 20);
+    &:hover {
+      background-color: rgb(223, 10, 10);
+    }
+  }
+
+  .btn-payment {
+    background-color: rgb(180, 112, 10);
+    &:hover {
+      background-color: rgba(207, 152, 69, 0.801);
+    }
+  }
+
+  .btn-track{
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    &:hover {
+      background-color: rgb(5, 82, 5);
+    }
+  }
+}
